@@ -29,6 +29,7 @@ import NewsRouter from "./src/Routers/Global/News.js";
 import NewsSecRouter from "./src/Routers/Homepage/NewsSec.js";
 import FeatureSecRouter from "./src/Routers/Homepage/Features.js";
 import DiningRouter from "./src/Routers/DiningPage/Diningpage.js";
+import OfferRouter from "./src/Routers/Global/Offer.js";
 
 
 
@@ -150,6 +151,8 @@ app.use("/api/v1/newsec",NewsSecRouter);
 app.use("/api/v1/gallery/event",GalleryEventRouter );
 app.use("/api/v1/quicklink", QuickLinkRouter);
 app.use("/api/v1/event", EventRouter);
+app.use("/api/v1/offer", OfferRouter);
+
 
 // Home page
 app.use("/api/v1/home/banner", HomeBannerRouter);
